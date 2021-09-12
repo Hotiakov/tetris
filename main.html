@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <style id="style"></style>
+    <title>Tetris</title>
+</head>
+<body class="body">
+    <div class="canvas__wrapper">
+        <div class="canvas__info">
+            <p class="nickname">Nick</p>
+            <p class="score">Score: 0</p>
+            <button class="start">Начать игру</button>
+        </div>
+        <canvas id="canvas" width="300" height="600"></canvas>
+        <div class="canvas__next T0">
+           <div class="T T1">
+               <div class="level">
+                   <div class="block block__left"></div>
+                   <div class="block block__left"></div>
+                   <div class="block block__left"></div>
+                   <div class="block"></div>
+               </div>
+           </div>
+           <div class="T T2">
+               <div class="level">
+                   <div class="block block__top"></div>
+               </div>
+               <div class="level">
+                   <div class="block block__left"></div>
+                   <div class="block block__left"></div>
+                   <div class="block"></div>
+               </div>
+           </div>
+           <div class="T T3">
+               <div class="level">
+                   <div class="zero"></div>
+                   <div class="zero"></div>
+                   <div class="block block__top"></div>
+               </div>
+               <div class="level">
+                   <div class="block block__left"></div>
+                   <div class="block block__left"></div>
+                   <div class="block"></div>
+               </div>
+           </div>
+           <div class="T T4">
+               <div class="level">
+                   <div class="block block__top block__left"></div>
+                   <div class="block block__top"></div>
+               </div>
+               <div class="level">
+                   <div class="block block__left"></div>
+                   <div class="block"></div>
+               </div>
+           </div>
+           <div class="T T5">
+               <div class="level">
+                   <div class="zero"></div>
+                   <div class="block block__top"></div>
+                   <div class="block"></div>
+               </div>
+               <div class="level">
+                   <div class="block block__left"></div>
+                   <div class="block"></div>
+               </div>
+           </div>
+           <div class="T T6">
+               <div class="level">
+                   <div class="block block__left"></div>
+                   <div class="block block__top"></div>
+               </div>
+               <div class="level">
+                   <div class="zero"></div>
+                   <div class="block block__left"></div>
+                   <div class="block"></div>
+               </div>
+           </div>
+           <div class="T T7">
+               <div class="level">
+                   <div class="zero"></div>
+                   <div class="block block__top"></div>
+               </div>
+               <div class="level">
+                   <div class="block block__left"></div>
+                   <div class="block block__left"></div>
+                   <div class="block"></div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="popup__records">
+        <div class="popup__wrapper">
+            <h2 class="popup__gameover">Игра окончена!</h2>
+            <div class="popup__table">
+                <ol class="popup__table-item">
+                    <!-- <li class="popup__you">
+                        <div class="popup__name">
+                            <span>1.</span>
+                            <h3>Name</h3>
+                        </div>
+                        <p class="popup__score">1000</p>
+                    </li> -->
+                </ol>
+            </div>
+            <button onclick="window.location = './index.html'"class="popup__btn">Вернуться в начало</button>
+        </div>
+    </div>
+
+
+    <script src="script/main.js"></script>
+</body>
+</html>
