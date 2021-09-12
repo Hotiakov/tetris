@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     class TetrisAudio{
         constructor(){
-            this.bg = new Audio('../bgMusic.mp3');
-            this.fall = new Audio('../fallen.mp3');
-            this.delete = new Audio('../deleteline.mp3');
-            this.end = new Audio('../end.mp3');
+            this.bg = new Audio('../sounds/bgMusic.mp3');
+            this.fall = new Audio('../sounds/fallen.mp3');
+            this.delete = new Audio('../sounds/deleteline.mp3');
+            this.end = new Audio('../sounds/end.mp3');
             this.bg.loop = true;
         }
         playFallen(){
